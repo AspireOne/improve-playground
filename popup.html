@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Toggle</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #1e1e1e;
+      /* Dark background */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    button {
+      background-color: #0078d4;
+      /* Primary button color */
+      border: none;
+      border-radius: 5px;
+      /* Rounded corners */
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005a9e;
+      /* Darken button color on hover */
+    }
+
+    button:active {
+      background-color: #003a70;
+      /* Even darker on click */
+    }
+
+    .shortcut-hint {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #a8a8a8;
+      /* Lighter text color for hint */
+    }
+  </style>
+</head>
+
+<body>
+  <button id="toggleMarkdown">Toggle Markdown</button>
+  <div class="shortcut-hint">or CTRL+M</div>
+  <script type="module" src="popup.js"></script>
+</body>
+
+</html>
